@@ -5,8 +5,12 @@ public class User {
 
     /** 패스워드 초기화 */
     public void initPassword(PasswordGenerator passwordGenerator) {
+        /** as - is 방식 */
 //        RandomPasswordGenerator randomPasswordGenerator = new RandomPasswordGenerator();
+
+        /** to - be 방식 */
         String password = passwordGenerator.generatePassword();
+
         /**
          * 비밀번호는 최소 8자 이상 12자 이하여야 한다.
          */
